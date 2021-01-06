@@ -30,7 +30,8 @@ public class Deck {
 	 * @param values is an array containing all of the card point values.
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
-		// YOUR CODE HERE
+        cards = [ranks, suits, values];
+        this.size = 52;
 	}
 
 	/**
@@ -38,8 +39,7 @@ public class Deck {
 	 * @return true if this deck is empty, false otherwise.
 	 */
 	public boolean isEmpty() {
-        // YOUR CODE HERE
-        return false;
+        return size == -1;
 	}
 
 	/**
@@ -47,8 +47,7 @@ public class Deck {
 	 * @return the number of undealt cards in this deck.
 	 */
 	public int getSize() {
-        // YOUR CODE HERE
-        return -1;
+        return this.size;
 	}
 
 	/**
@@ -57,8 +56,12 @@ public class Deck {
 	 *         previously dealt.
 	 */
 	public Card deal() {
-		// YOUR CODE HERE
-        return null;
+		if (this.Deck.isEmpty() == true) {
+            return null;
+        }
+        else {
+            return this.card;
+        }
 	}
 
 	/**
